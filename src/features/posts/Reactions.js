@@ -22,13 +22,15 @@ return (
         type="button"
         onClick={handleReaction}
         value={name}
+        className="ReactionButton"
     >
     {emoji} {post.reactions[name]}
     </button>
 )})
+
     return(
-        <div className="emoticons">
+        <>
             {buttons}
-        </div>
+        </>
     )
 }
